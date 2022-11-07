@@ -1,0 +1,326 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* html{
+    font-size: 65.5%;
+} */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
+
+.menuPrincipal{
+    background-color: rgb(240, 214, 183);
+}
+.menuPrincipal ul{
+    list-style-type: none;
+    display: inline-block;
+}
+.menuPrincipal ul li{
+    padding: 20px 20px;
+    display: inline-block;
+}
+
+.titulo{
+    background-color: beige;
+    color: rgb(114, 0, 0);
+    text-align: center;
+}
+.titulo__subtitulo{
+    color: rgb(118, 171, 221);
+    text-align: center;
+}
+
+.subtitulo{
+    background-color: rgb(240, 214, 183);
+    color: rgb(114, 0, 0);
+    border: solid 2px #151515;
+    text-align: center;
+}
+
+.atajo{
+    background-color: beige;
+    /* display: block; */
+}
+
+.imagenLogo{
+    display: inline-block;
+    width: 75px;
+    height: 50px;
+}
+
+.nosotros{
+    background-color:beige;
+    text-align: center;
+}
+
+.nosotros__parrafo{
+    background-color: beige;
+}
+
+.table img{
+    width: 250px;
+    height: 200px;
+    display: inline-block;
+    background-color: beige;
+}
+
+.table2{
+    background-color: beige;
+}
+
+#table2{
+    background-color: beige;
+}
+
+.listas{
+    color: red !important;
+    list-style-type: none;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    line-height: 2;
+    text-decoration: none;
+    border: solid 1px #151515; 
+    background-color: beige;
+    background-repeat: repeat-x;
+    background-position: 45% 55%;
+    background-size: contain;
+}
+
+
+.galeria{
+    background-color: beige;
+}
+.fotos img{
+    width: 300px;/* ancho */
+    height: 200px;/* alto */
+    margin: 20px 130px;
+    border: solid 5px #ffffff;
+/*     color: #ffffff; */
+}
+.fotos{
+    position: relative;
+}
+.fotoRebelde{
+    position: relative; /* position: absolute; */
+/*     top: 50px;
+    left: 100px; */
+}
+
+.formulario{
+    background-color: beige;
+    display: block;
+}
+.formulario label textarea input{
+    display: inline-block;
+}
+
+.parallax{
+    background-image: url("../MULTIMEDIA/fondoparallax.jpg");
+    height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+/*     background-repeat: repeat-x; */
+    background-size: cover;
+    margin-bottom: 50px;
+}
+.parallax__titulo{
+    color: beige;
+    text-align: center;
+    line-height: 750px;
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.parrafo{
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 100px ;
+    font-size: 25px;
+    background-color: beige;
+    color: rgb(114, 0, 0);
+    overflow: auto;
+}
+
+
+
+
+
+
+
+
+
+.redes{
+    position: fixed;
+    right: 0;
+    bottom: 50%;
+}
+.redes a img{
+    width: 50px;
+    display: block;
+}
+
+.whastapp{
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+}
+.whatsappImg{
+    width: 50px;
+}
+
+.contenedor{
+    display: grid; /* PRIMER PASO */
+    grid-template-columns: repeat(2, 1fr); /* CANTIDAD DE COLUMNAS */
+    grid-template-rows: 0.1fr 1fr 0.15fr;
+    grid-template-areas:
+    "parte1 parte1"
+    "tabla tabla"
+    "info info";
+
+    /* grid-column-gap: 10px;
+    grid-row-gap: 15px; */
+}
+.principal{
+    grid-area: parte1;
+}
+.tabla{
+    grid-area: tabla;
+}
+.textocorto{
+    grid-area: info;
+    background-color: beige;
+    font-size: 40px;
+}
+.galeria{
+    background-color: beige;
+    grid-area: fuente;
+}
+
+.fotos img{
+    width: 300px;/* ancho */
+    height: 200px;/* alto */
+    margin: 10px 20px;
+    border: solid 5px #ffffff;
+}
+.fuente{
+    height: 150px;
+    width: 150px;
+
+    /*     transform: translate(40px, 100px); */ 
+    /* mover cosas en eje X,Y,Z */
+
+    /*     transform: rotate(333deg); */
+    /* rotate(xdeg), rotate(ydeg), rotate(zdeg) */
+
+    /* transform: scale(2,1); */
+    /* scaleX(x), scaleY(Y) */
+
+    /* transform: skew(20deg,10deg); */
+    /* skewX(x), skewY(x) */
+
+    /* transition: height 3s, width 3s; */
+    transition: all 2s;
+}
+.fuente1{
+    height: 150px;
+    width: 150px;
+    transition: all 2s;
+}
+.galeria img:hover{
+    height: 400px;
+    width: 400px;
+    /* transform: translate(30px); */
+    transform: rotate(333deg);
+}
+
+
+
+.grid{
+    background-color: beige;
+    width: 100%;
+    height: 700px;
+    display: grid;
+    grid-area: grid;
+    grid-template-columns: repeat(2, 30%);
+    grid-template-rows: repeat(3, 200px);
+    justify-items: stretch; /* horizontal */
+
+    /* start / end / center / stretch */
+
+    align-items: center /* vertical */;
+
+    justify-content: center; /* mover todo */
+    /*  / start / end / center / stretch / space-between / space-around / space-evenly */
+}
+.grid div{
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    border: 4px solid rgb(132, 0, 184);
+    color: rgb(255, 252, 97);
+    text-align: center;
+    font-size: 20px;
+}
+
+/* diseño responsive (para las paginas de nosotros y contacto) */
+@media screen and (max-width: 500px){
+    .screencelular{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.6fr 0.2fr;
+        grid-template-areas: 
+        "headercelular"
+        "maincelular"
+        "footercelular";
+    }
+    .headercelular{
+        background-color: #c4f3e3;
+        grid-area: headercelular;
+    }
+    .maincelular{
+        background-color: #a77272;
+        grid-area: maincelular;
+    }
+    .footercelular{
+        background-color: #c7c77c;
+        grid-area: footercelular;
+    }
+    .imagenLogo{
+        display: none;/* DISPLAY NONE PARA SACAR COSAS */
+    }
+}
+
+
+.box{
+    display: flex;
+    padding: 100px 100px;
+    background-color: beige;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.box img{
+    width: 250px;
+    height: 200px;
+}
+.caja{
+    border: 1px solid black;
+    background-color: #fae1e1;
+    color: #151515;
+    font-family: cursive;
+    width: 400px;
+    height: 200px;
+    overflow: auto;
+    text-align: center;
+    margin: 5px 5px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DECONTACTO</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+</head>
+
+<body class="screencelular" id="inicio">
+    <header id="header" class="headercelular">
+        <nav class="menuPrincipal">
+            <img src="../MULTIMEDIA/logo.jpg" alt="logo" class="imagenLogo">
+            <ul class="listas">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="galerias.html">Galerias</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a> </li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <main class="maincelular">
+    <a href="#final" class="atajo">Ir al final del sitio</a>
+    <h1 class="titulo">Contactate con nosotros</h1>
+    <h2 class="subtitulo">Para dejarnos un mensaje completa el siguiente formulario:</h2>
+        <form class="formulario">
+            <label for="nombreApellido">Nombre y Apellido:</label>
+            <input class="formulario" type="text" value="Deja tu nombre aqui" name="nombreApellido">
+            <label for="correo">Correo electronico:</label>
+            <input class="formulario" type="email" value="Deja aqui tu correo" name="correo">
+            <label for="pass">Contraseña:</label>
+            <input class="formulario" type="password" name="pass">
+            <label for="mensaje">Deja un mensaje:</label>
+            <textarea class="formulario" name="mensaje" maxlength="300" cols="20" rows="4">Deja aqui un comentario de un maximo de 300 caracteres.</textarea>
+            <label for="sexo">Indica tu sexo:</label>
+            <input type="radio" value="F" name="sexo">F
+            <input type="radio"value="M" name="sexo">M
+            <label for="terminos">¿Aceptas?</label>
+            <input type="checkbox" value="1" name="terminos" required> Acepta terminos
+            <input type="checkbox" value="2" name="terminos"> Acepto condiciones
+            <input type="checkbox" value="3" name="terminos"> Acepto cookies
+            <label class="formulario" for="pais">¿De que pais sos?</label>
+            <select name="pais">
+                <option value="ARG">Argentina</option>
+                <option value="ESP">España</option>
+            </select>
+            <fieldset>
+                <legend>Datos de facturacion</legend>
+                <label for="nombreApellido">Nombre y Apellido:</label>
+                <input type="text" name="nombreApellido">
+                <br>
+                <label for="correo">Correo electronico:</label>
+                <input type="email" name="correo">
+                <br>
+                <label for="pass">Contraseña:</label>
+                <input type="password" name="pass">
+            </fieldset>
+            <input type="submit" value="Envia este formulario" name="" id="">
+            <input type="reset" value="Borrar/Resetear" name="" id="">
+        </form>
+    </main>
+    
+    
+    <footer id="final" class="atajo" class="footercelular">
+        COPYRIGHT
+        <a href="#inicio" >ir al inicio del sitio</a>
+    </footer>
+</body>
+</html>
