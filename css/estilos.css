@@ -324,3 +324,41 @@ header{
     text-align: center;
     margin: 5px 5px;
 }
+
+
+
+/* clase 12 seudo  */
+
+Input:focus{
+    height: 17px;
+    background-color: peru;
+}
+
+input[type="checkbox"]:checked{
+    box-shadow: 0 0 0 2px peru;
+}
+/* esto es clase 11 voy a ver que modifica
+*/
+
+.flex{
+    padding: 20px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: flex-start;
+    background-color: beige;
+}
+.flex div{
+    background-color: beige; 
+    overflow: hidden;
+    font-size: 15px;
+    width: 50px;
+    height: 50px;
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}  
