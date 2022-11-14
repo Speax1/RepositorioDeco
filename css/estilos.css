@@ -47,10 +47,7 @@ header{
     text-align: center;
 }
 
-.atajo{
-    background-color: beige;
-    /* display: block; */
-}
+
 
 .imagenLogo{
     display: inline-block;
@@ -362,3 +359,15 @@ input[type="checkbox"]:checked{
     justify-content: center;
     align-items: center;
 }  
+
+
+.atajo{
+    padding: 20px;
+    height: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:initial;
+    align-content: flex-start;
+    background-color: beige;
+}

@@ -9,5 +9,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Speax1/RepositorioDeco.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Speax1/RepositorioDeco/issues"
+  },
+  "homepage": "https://github.com/Speax1/RepositorioDeco#readme",
   "description": ""
 }
